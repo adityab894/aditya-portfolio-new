@@ -19,26 +19,26 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         {/* Logo */}
         <div className="block dark:hidden">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={nashlogolight} className="h-8" alt="Logo" />
             <span className="dark:text-2ndry-1 self-center text-2xl font-semibold whitespace-nowrap">
               Aditya Bisht
             </span>
-          </a>
+          </Link>
         </div>
         <div className="hidden dark:block">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={nashlogodark} className="h-8" alt="Logo" />
             <span className="dark:text-2ndry-1 self-center text-2xl font-semibold whitespace-nowrap">
               Aditya Bisht
             </span>
-          </a>
+          </Link>
         </div>
         {/* Buttons */}
         {/* Buttons */}

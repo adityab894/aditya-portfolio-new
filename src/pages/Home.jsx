@@ -169,7 +169,7 @@ const Home = () => {
         <br />
         <br />
 
-        <div id="projects ">
+        <div>
           <header className="headsectdiv">
             <Titles htitle="works" />
             <div>
@@ -185,7 +185,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/projects#projects"
+                  to="/projects"
                   className="border-2ndry-2 btn2 border-2 p-1"
                 >
                   <span className="spn2">
@@ -199,7 +199,7 @@ const Home = () => {
           </header>
           <Projectmini container={container} container2={container2} />
         </div>
-        <div id="skills">
+        <div>
           <header className="headsectdiv">
             <Titles htitle="skills" />
             <div className="">
@@ -215,7 +215,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/about#skillset"
+                  to="/about"
                   className="border-2ndry-2 btn2 border-2 p-1"
                 >
                   <span className="spn2">
@@ -231,7 +231,7 @@ const Home = () => {
             <SkillFront container={container} container2={container2} />
           </div>
         </div>
-        <div id="aboutme py-5">
+        <div className="py-5">
           <header className="headsectdiv">
             <Titles htitle="about" />
             <div className="col-span-1"></div>
@@ -248,7 +248,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               className="border-lhilit-1 dark:border-dhilit-1 group relative inline-block border-2 text-sm font-medium"
             >
-              <Link to="/about#about" className="size-4">
+              <Link to="/about" className="size-4">
                 <span className="line dark:bg-primary bg-2ndry-1 size-3"></span>
                 <div className="dark:bg-primary px-3 py-3"> Read more ...</div>
               </Link>
@@ -256,7 +256,7 @@ const Home = () => {
           </div>
           <Quote />
         </div>
-        <div id="contact" className="py-10">
+        <div className="py-10">
           <header className="headsectdiv">
             <Titles htitle="contact" />
           </header>

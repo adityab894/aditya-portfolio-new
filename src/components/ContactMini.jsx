@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ContactMini = ({ htitle, container, container2 }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -88,10 +89,10 @@ const ContactMini = ({ htitle, container, container2 }) => {
         {htitle !== "contact" && (
           <div className="contactmebutton relative pt-10 text-right">
             <div className="border-lhilit-1 dark:border-dhilit-1 group relative inline-block border-2 text-sm font-medium">
-              <a href="/contact#contact" className="size-4">
+              <Link to="/contact" className="size-4">
                 <span className="line dark:bg-primary bg-2ndry-1 size-3"></span>
                 <div className="dark:bg-primary px-3 py-3">Other...</div>
-              </a>
+              </Link>
             </div>
           </div>
         )}
