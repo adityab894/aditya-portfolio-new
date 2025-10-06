@@ -1,0 +1,79 @@
+/* Default Light Mode */
+.button-icon {
+    display: flex;
+    border: 3px solid #101010;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.icon {
+    background-color: #101010;
+    padding: 10px 10px 5px 10px;
+}
+
+.cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+}
+
+.button-icon:hover {
+    border-color: #be0eec;
+}
+
+.button-icon:hover .cube {
+    transform: rotateX(90deg);
+}
+
+.side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.top {
+    background: #be0eec;
+    color: #101010;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front {
+    background: #e5e7eb;
+    color: #101010;
+    transform: translate3d(0, 0, 1em);
+}
+
+
+/* 🌙 Dark Mode overrides */
+.dark .button-icon {
+    border-color: #e5e7eb;
+}
+
+.dark .icon {
+    background-color: #e5e7eb;
+}
+
+.dark .button-icon:hover {
+    border-color: #d74115;
+    /* ✅ replaced be0eec with d74115 */
+}
+
+.dark .top {
+    background: #d74115;
+    /* ✅ replaced be0eec with d74115 */
+    color: #e5e7eb;
+}
+
+.dark .front {
+    background: #101010;
+    color: #e5e7eb;
+}

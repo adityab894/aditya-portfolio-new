@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import './styles/security.css';
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*  */
+/* @theme {
+  --color-grape: #32a
+}
+
+.coin {
+  @apply text-grape bg-amber-100 rounded-lg
+} */
+
+@theme {
+  --font-fira: "Fira Code", sans;
+  --color-primary: #111111;
+  --color-primary-4: #101010;
+  --color-primary-2: #161318;
+  --color-primary-3: #282C33;
+  --color-primary-4: #1d1e21;
+  --color-primary-5: #9c9c9c;
+
+  --color-2ndry-1: #e5e7eb;
+  --color-2ndry-2: #abb2bf;
+  --color-lhilit-1: #be0eec;
+  --color-lhilit-2: #9e3dc1;
+  --color-dhilit-1: #d74115;
+  --color-dhilit-2: #e66500;
+
+}
+
+.firstLetterW::first-letter {
+  @apply text-2ndry-1
+}
+
+.skillLogo {
+  @apply object-contain border-2ndry-2 bg-primary-3 dark:bg-primary rounded-2xl lg:border-8 md:border-4 border-4
+}
+
+.navilink {
+  @apply md:hover:text-lhilit-2 md:dark:hover:text-dhilit-2 text-primary hover:shadow-lg dark:hover:bg-primary-2 block rounded-sm px-3 py-2 hover:bg-fuchsia-100 hover:text-xl md:p-0 md:hover:bg-transparent dark:text-white dark:hover:text-white md:dark:hover:bg-transparent
+}
+
+.projecttable {
+  @apply border-2ndry-2 hover:text-2ndry-1 shadow-lg dark:shadow-primary-2 dark:hover:shadow-primary-3 hover:shadow-xl/30 overflow-hidden text-center dark:hover:bg-primary-3 hover:bg-primary-3 rounded-md md:border-2 border-1
+}
+
+.head1 {
+  @apply font-bold text-2xl xl:text-4xl md:text-3xl
+}
+
+.head4 {
+  @apply font-bold text-xl xl:text-3xl md:text-2xl
+}
+
+.head5 {
+  @apply font-bold text-lg
+}
+
+
+
+.head2 {
+  @apply col-span-1 md:text-3xl sm:text-2xl text-xl font-bold sm:col-span-2
+}
+
+.headsectdiv {
+  @apply grid grid-cols-4 gap-4 py-10 sm:gap-4 sm:py-10 md:grid-cols-6
+}
+
+.mycontainer {
+  @apply container mx-auto cursor-default px-6 py-5 text-sm sm:px-10 md:px-15 md:text-lg lg:px-60 xl:px-80
+}
+
+.texthilit1 {
+  @apply text-lhilit-1 dark:text-dhilit-1 font-black
+}

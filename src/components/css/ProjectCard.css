@@ -1,0 +1,265 @@
+/* From Uiverse.io by mirbasit01 */
+/* for mobile view 950px*/
+.card {
+    /* Light mode background */
+    background: linear-gradient(#abb2bf, #abb2bf) padding-box,
+        linear-gradient(145deg, transparent 35%, #be0eec, #abb2bf) border-box;
+    border: 3px solid transparent;
+
+
+    /* Common styles */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: top bottom;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    border-radius: 0.5em;
+
+    /* Animation */
+
+}
+
+
+
+/* Dark mode styles */
+.dark .card {
+    background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #f73232, #252e31) border-box;
+    border: 2px solid transparent;
+}
+
+/* Alternative approach using @media if you prefer */
+
+
+.card .main-content {
+    /* flex: 1; */
+    padding: 20px;
+}
+
+.card .header span:first-child {
+    font-weight: 600;
+    /* color: #717171; */
+    margin-right: 4px;
+}
+
+.card .heading {
+    font-size: 24px;
+    margin: 24px 0 16px;
+    font-weight: 600;
+}
+
+.card .categories {
+    display: flex;
+    flex-wrap: wrap;
+    /* Added this to allow wrapping */
+    gap: 10px;
+}
+
+.card .categories span {
+    /* background-color: #f73232; */
+    padding: 4px 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 50em;
+    white-space: nowrap;
+    /* Prevents text within a badge from wrapping */
+}
+
+/* Light mode category badges */
+.card .categories span {
+    background-color: #be0eec;
+    /* color: #374151; */
+}
+
+/*  */
+/* Dark mode category badges */
+.dark .card .categories span {
+    background-color: #f73232;
+}
+
+.card .footer {
+    font-weight: 600;
+    /* color: #717171; */
+    margin-right: 4px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+.notification {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    /* width: 18rem; */
+    min-height: 8rem;
+    /* Added min-height to maintain consistent height */
+    background: #29292c;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff); */
+    /* --color: #32a6ff; */
+    margin: 2rem 0;
+    /* Match the margin of non-hovered state */
+}
+
+.notification {
+    --gradient: linear-gradient(to bottom, #bf7bec, #9e3dc1, #be0eec);
+}
+
+.dark .notification {
+    --gradient: linear-gradient(to bottom, #ff7d16, #d74115, #f73232);
+}
+
+.notification:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: #abb2bf;
+    z-index: 2
+}
+
+.dark .notification:before {
+
+    background: #18181b;
+
+}
+
+.notification:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+}
+
+.notification:hover:after {
+    transform: translateX(0.15rem)
+}
+
+.notititle {
+    color: var(--color);
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+    font-size: 24px;
+    /* margin: 24px 0 16px; */
+    font-weight: 600;
+}
+
+.notification:hover .notititle {
+    /* transform: translateX(0.15rem)    */
+}
+
+.notibody {
+    color: #99999d;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification:hover .notibody {
+    /* transform: translateX(0.25rem) */
+}
+
+.notiglow,
+.notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    /* background: radial-gradient(circle closest-side at center, white, transparent); */
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
+    /* Prevent glow from interfering with hover */
+}
+
+.notiglow {
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+}
+
+.notiborderglow {
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.notification:hover .notiglow {
+    opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+    opacity: 0.1
+}
+
+.note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+}
+
+/* Add these styles to your existing CSS */
+
+/* Categories styling inside notification */
+.notification .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 1.25rem;
+    margin: 0.75rem 0 1rem 0;
+    /* Added margin: top right bottom left */
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification .categories span {
+    /* background-color: #f73232; */
+    padding: 4px 8px;
+    text-transform: uppercase;
+    /* border-radius: 50em; */
+    white-space: nowrap;
+}
+
+/* Light mode notification category badges */
+.notification .categories span {
+    /* background-color: #be0eec; */
+}
+
+/* Dark mode notification category badges */
+.dark .notification .categories span {
+    /* background-color: #f73232; */
+}
+
+/* Optional: Add hover effect for notification categories */
+.notification:hover .categories {
+    /* transform: translateX(0.25rem); */
+}
+
+/*  */
+/*  */
+/*  */
+/* /* Cursor Effect Styles */
+.hover-area {
+    padding: 20px;
+    /* Adjust the padding to set the minimum hover area */
+    margin: -20px;
+    /* Negative margin to offset the padding */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}

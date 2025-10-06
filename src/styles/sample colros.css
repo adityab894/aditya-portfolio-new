@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/*  */
+
+/* @theme {
+  --color-grape: #32a
+}
+
+.coin {
+  @apply text-grape bg-amber-100 rounded-lg
+} */
+
+@theme {}
+
+.body {
+  color: #abb2bf;
+  background-color: #161318;
+  background-color: #101010;
+  primary-4: #1d1e21;
+  primary-5: #9c9c9c;
+  color: #abb2bf;
+  color: #828282;
+  border-color: #c778dd;
+  border-color: #bf7bec;
+  border-color: #9e3dc1;
+  border-color: #be0eec;
+  border-color: #d1330e;
+  border-color: #d74115;
+  border-color: #f73232;
+  border-color: #e66500;
+  border-color: #ff5e17;
+  border-color: #ff7d16;
+
+}
+
+
+
+.bg {
+  color: #111111;
+  /* primary */
+  color: #101010;
+  /* primary-4 */
+  color: #161318;
+  /* primary-2 */
+  color: #282C33;
+  /* primary-3 */
+  color: #e5e7eb;
+  /* 2ndry-1 */
+  color: #abb2bf;
+  /* 2ndry-2 */
+  color: #be0eec;
+  /* light-highlight-1 */
+  color: #9e3dc1;
+  /* light-highlight-2 */
+  /* dark-highlight-1 */
+  color: #e66500;
+  /* dark-highlight-2 */
+}

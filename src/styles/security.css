@@ -1,0 +1,52 @@
+/* Only apply these in production */
+body.production-mode {
+    /* Disable text selection globally */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*  Allow selection in safe zones */
+body.production-mode input,
+body.production-mode textarea,
+body.production-mode [contenteditable="true"],
+body.production-mode .allow-select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Disable image dragging */
+body.production-mode img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+}
+
+/*  Allow pointer events for images that are interactive */
+body.production-mode img.interactive,
+body.production-mode a img,
+body.production-mode button img {
+    pointer-events: auto;
+}
+
+/* Prevent text highlight background */
+body.production-mode ::selection {
+    background-color: transparent;
+}
+
+body.production-mode ::-moz-selection {
+    background-color: transparent;
+}
+
+/* Basic anti-devtools print detection */
+@media print {
+    body.production-mode {
+        display: none;
+    }
+}

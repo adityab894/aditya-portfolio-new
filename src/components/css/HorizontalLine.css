@@ -1,0 +1,28 @@
+.line1 {
+    animation: move-line1 4s linear infinite;
+}
+
+.line2 {
+    animation: move-line2 4s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes move-line1 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes move-line2 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
