@@ -62,7 +62,7 @@ const Navbar = () => {
               <img
                 src={toltvideo}
                 alt="Tooltip animation"
-                className="h-32 w-48 rounded object-cover shadow-lg"
+                className="h-30 w-43 rounded object-cover shadow-lg"
               />
             </div>
           </div>
