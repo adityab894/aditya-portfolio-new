@@ -1,15 +1,30 @@
 {
-  "dependencies": {
-    "express": "^5.1.0",
-    "react": "^19.2.0"
-  },
   "name": "portfolio",
   "version": "1.0.0",
+  "type": "module",
   "description": "<div align=\"center\">",
   "main": "eslint.config.js",
-  "devDependencies": {},
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.22",
+    "gsap": "^3.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^10.0.1",
+    "react-router-dom": "^7.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0-alpha.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "tailwindcss": "^4.0.0-alpha.30",
+    "vite": "^7.1.9"
   },
   "author": "Aditya Bisht",
   "license": "ISC",
