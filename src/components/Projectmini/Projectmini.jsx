@@ -42,7 +42,7 @@ const Projectmini = ({ title }) => {
       title: "Portfolio 2.0",
       description: "The portfolio you are viewing right now",
       image: port,
-      link: "https://github.com/adityab894/portfolio2",
+      link: "https://github.com/adityab894/aditya-portfolio-new",
     },
     {
       id: "002",

@@ -30,13 +30,13 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adityab894/portfolio2.git"
+    "url": "git+https://github.com/adityab894/aditya-portfolio-new.git"
   },
   "keywords": [
     "portfolio"
   ],
   "bugs": {
-    "url": "https://github.com/adityab894/portfolio2/issues"
+    "url": "https://github.com/adityab894/aditya-portfolio-new/issues"
   },
-  "homepage": "https://github.com/adityab894/portfolio2#readme"
+  "homepage": "https://github.com/adityab894/aditya-portfolio-new#readme"
 }
